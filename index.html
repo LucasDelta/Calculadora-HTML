@@ -1,0 +1,50 @@
+<!DOCTYPE html><!--html 5-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!--Tratar dos caracteres especiais -->
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="styles.css"> <!--Aqui é onde linka o css-->
+  <script src="script.js"></script><!--Aqui é onde linka o javascript-->
+</head>
+<body class="calcbody"><!--Sempre colocar a classe dentro da tag-->
+  
+  
+  <div class="corpo">
+   <div class="tela">
+    <span id="defaut0">0</span>
+   </div>
+    <div class="corpo2">
+      <div class="linha">
+        <input type="button" value="C" class="botao" onclick="apagar()">
+        <input type="button" value="+/-" class="botao"onclick="maisMenos()"> 
+        <input type="button" value="%" class="botao" onclick="porcentagem()">
+        <input type="button" value="/" class="operation" onclick="divisao()">
+      </div>
+      <div class="linha">
+        <input type="button" value="7" class="botao" onclick="digitarNumeros(7)">
+        <input type="button" value="8" class="botao" onclick="digitarNumeros(8)">
+        <input type="button" value="9" class="botao" onclick="digitarNumeros(9)">
+        <input type="button" value="*" class="operation" onclick="multiplicacao()">
+      </div>
+      <div class="linha">
+        <input type="button" value="4" class="botao" onclick="digitarNumeros(4)">
+        <input type="button" value="5" class="botao" onclick="digitarNumeros(5)">
+        <input type="button" value="6" class="botao" onclick="digitarNumeros(6)">
+        <input type="button" value="-" class="operation" onclick="subtracao()">
+      </div>
+      <div class="linha">
+        <input type="button" value="1" class="botao" onclick="digitarNumeros(1)">
+        <input type="button" value="2" class="botao" onclick="digitarNumeros(2)">
+        <input type="button" value="3" class="botao" onclick="digitarNumeros(3)">
+        <input type="button" value="+" class="operation" onclick="somar()">
+      </div>
+      <div class="linha">
+        <input type="button" value="0" class="botao0" onclick="digitarNumeros(0)">
+        <input type="button" value="." class="botao"  onclick="digitarNumeros('.')">
+        <input type="button" value="=" class="operation" onclick="calcular()">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
